@@ -1,0 +1,356 @@
+/* FUENTES DE TIPOGRAFIA */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+@font-face {
+    font-family: "SimpleTread" ;
+    src: url(../fonts/SimpleThread_PERSONAL_USE_ONLY.otf);
+}
+@font-face {
+    font-family: "Rouhg";
+    src: url(../fonts/Rough\ Anthem.ttf);
+}
+@font-face {
+    font-family: "OurHand";
+    src: url(../fonts/Soft\ Elegance.ttf);
+}
+/* MENU DE NAVEGACION */
+nav{
+    background-color: #193441;
+    color: white;
+}
+.dropdown-item{
+    color: #193441;
+}
+.navbar-nav{
+    font-family: "OurHand";
+    letter-spacing: 2px;
+}
+.navbar-brand{
+    font-family: "Rouhg";
+    letter-spacing: 3px;
+}
+/* SECCION INICIO */
+.title-word {
+    animation: color-animation 4s linear infinite;
+}
+.title-word-1 {
+    --color-1: #ff5900;
+    --color-2: #a00a07;
+    --color-3: #005d85;
+}  
+.title-word-2 {
+    --color-1: #fcac00;
+    --color-2: #008374;
+    --color-3: #320bc0;
+} 
+.title-word-3 {
+    --color-1: #005f54;
+    --color-2: #ca1310;
+    --color-3: #0bd404;
+} 
+.title-word-4 {
+    --color-1: #3329b9;
+    --color-2: #00a50e;
+    --color-3: #8b0200;
+}
+.title-word-5 {
+    --color-1: #f3a601;
+    --color-2: #5be7d7;
+    --color-3: #1c4d17;
+}
+.title-word-6 {
+    --color-1: #3329b9;
+    --color-2: #00a50e;
+    --color-3: #8b0200;
+}  
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}
+#titulo .title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 2.5vw;
+    text-transform: uppercase;
+}
+#titulo{
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+.bg-video{
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background-color: white;
+    background-size: contain;
+    object-fit: cover;
+}
+#titulo2 .title{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 5vw;
+    text-transform: uppercase;
+} 
+#titulo2{
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+/* SECCION DE QUIENES SOMOS */
+#part1 h2{
+    font-family: "OurHand";
+    letter-spacing: 2px;
+}
+#part1 p{
+    font-family: "OurHand";
+}
+#part1 img{
+    animation: flotar 3s ease infinite;
+}
+@keyframes flotar{
+    0%{ transform: translateY(10px);}
+    25%{ transform: translateY(5px)}
+    100%{ transform: translateY(10px)}
+}
+.color-white{
+    color:white;
+}
+.flip-box{
+    transform-style: preserve-3d;
+    perspective:1000px;
+    cursor:pointer;
+}
+.flip-box-front,.flip-box-back{
+    background-size: cover;
+    background-position: center;
+    border-radius:8px;
+    min-height: 475px;
+    transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+    backface-visibility:hidden;
+}
+.flip-box-front{
+    transform:rotateY(0deg);
+    transform-style: preserve-3d;
+}
+.flip-box:hover .flip-box-front{
+    transform: rotateY(-180deg);
+    transform-style: preserve-3d;
+}
+.flip-box-back{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    transform: rotateY(180deg)
+}
+.flip-box:hover .flip-box-back{
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+.flip-box .inner{
+    position: absolute;
+    left:0;
+    width:100%;
+    padding: 60px;
+    outline:1px solid transparent;
+    z-index:2;
+    transform: translateY(-50%) translateZ(60px) scale(.94);
+    top:50%;
+}
+.flip-box-header{
+    font-size: 40px;
+    font-family: "OurHand";
+}
+.flip-box p{
+    font-size: 20px;
+    font-family: "OurHand";
+    line-height: 1.5rem;
+}
+/* SECCION DE SERVICIOS */
+.servicios{
+    display: grid;
+    place-items: center;
+    background-color: #9dc08b;
+    height: 90%;
+}
+.section-header{
+    position: relative;
+    text-align: center;
+    padding-bottom: 25px;
+    font-family: "OurHand";
+}
+.ser-titulo, .ser-contenido{
+    font-family: "OurHand";
+}
+.portafoli-ser{
+    max-width: 1000px;
+    padding: 0 15px 50px;
+    margin: 0 auto 80px auto;
+}
+.single-item{
+    box-shadow: 0 0 30px rgba(56, 51, 51, 0.5);
+    overflow: hidden;
+    background: #edf1d6;
+    border-radius: 30px;
+    padding: 15px;
+    margin: 50px 15px;
+}
+.profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.img-area{
+    margin: 0 15px 15px 15px;
+}
+.img-area img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 7px solid #193441;
+}
+.content{
+    font-size: 18px;
+}
+.content h6{
+    font-size: 25px;
+    text-align: center;
+}
+.content p{
+    text-align: justify;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: #193441;
+}
+/* SECCION DE CREADORES */
+.creadores{
+    background-image: url(/img/fondo_creadores.png);
+    background-size: cover;
+}
+#card{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius: 1rem;
+    backdrop-filter: blur(1rem);
+    background-color: rgba(255, 255, 255, 0.493);
+
+}
+.img2 img{
+    height: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+.img1 img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+    margin-top: -80px;
+}
+i{
+    color: rgb(0, 60, 255);
+}
+.img3 img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.img4 img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    height:90px;
+    width: 120px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+    margin-left: -30px;
+}
+/* SECCION PIE DE PAGINA */
+footer{
+    height: 50px;
+    color: white;
+}
+.iconos{
+    color: white;
+}
+.contenedor-icon{
+    position: absolute;
+    z-index:99;
+    bottom:.5%; 
+    left:50%;
+    font-size:26px;
+    animation: subir-bajar 1s ease infinite;
+}
+@keyframes subir-bajar{
+    0%{ transform: translateY(8px);}
+    25%{ transform: translateY(-1px)}
+    100%{ transform: translateY(8px)}
+}
+
+
+/* PORTAFOLIO */
+.desaparecer {
+    @media min-height(576px) {
+        display-none
+    }
+}
+/* DESKTOP */
+.desktop {
+    color: #fff;
+    font-size: 10rem;
+    top: 56%;
+    left: 37%;
+    font-family: 'Amatic SC', cursive;
+}
+
+/* MOBILE */
+.mobile {
+    top: 48%;
+    left: 23%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.nimodo2 {
+    bottom: 5%;
+}
+
+
+
+.portafolioDesktop {
+    height: 90vh;
+}
+
+.imagen {
+    padding: .5rem;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.141);
+    cursor: pointer;
+    
+}
+
+.no {
+    min-height: max-content;
+}
+
+/* OTROS */
+/* IMG MODALES */
+
